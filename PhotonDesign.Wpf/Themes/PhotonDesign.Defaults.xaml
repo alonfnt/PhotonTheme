@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- This dictionary overrides the default themes -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/Generic.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.TextBlock.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.ScrollBar.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource RegularMediumTextBlock}" />
+    <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource MinimalScrollBar}" />
+</ResourceDictionary>
