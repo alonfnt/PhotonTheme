@@ -54,15 +54,15 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ButtonExtension.cs" />
+    <Compile Include="Extensions\ButtonExtension.cs" />
     <Compile Include="ControlzEx\PackIconBase.cs" />
     <Compile Include="Converters\NullToVisibilityConverter.cs" />
     <Compile Include="Converters\ShadowConverter.cs" />
     <Compile Include="Converters\ShadowInfo.cs" />
-    <Compile Include="PackIcon.cs" />
-    <Compile Include="PackIconDataFactory.cs" />
-    <Compile Include="PackIconExtension.cs" />
-    <Compile Include="PackIconKind.cs" />
+    <Compile Include="PackIcon\PackIcon.cs" />
+    <Compile Include="PackIcon\PackIconDataFactory.cs" />
+    <Compile Include="Extensions\PackIconExtension.cs" />
+    <Compile Include="PackIcon\PackIconKind.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -76,10 +76,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Ripple.cs" />
-    <Compile Include="RippleAssist.cs" />
-    <Compile Include="ScrollBarExtension.cs" />
-    <Compile Include="ShadowAssist.cs" />
+    <Compile Include="Extensions\ScrollBarExtension.cs" />
+    <Compile Include="Extensions\ShadowExtension.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -114,10 +112,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\PhotonTheme.TextBlock.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Themes\PhotonTheme.Ripple.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonTheme.Wpf", "PhotonTheme.Wpf\PhotonTheme.Wpf.csproj", "{EE4E0EF3-4DD6-48C0-BAD0-5B736AD766E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonTheme.DemoWpf", "PhotonTheme.DemoWpf\PhotonTheme.DemoWpf.csproj", "{EF8C12AB-6A43-4C03-A9BE-BF5D881B622B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EE4E0EF3-4DD6-48C0-BAD0-5B736AD766E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE4E0EF3-4DD6-48C0-BAD0-5B736AD766E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE4E0EF3-4DD6-48C0-BAD0-5B736AD766E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF8C12AB-6A43-4C03-A9BE-BF5D881B622B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF8C12AB-6A43-4C03-A9BE-BF5D881B622B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF8C12AB-6A43-4C03-A9BE-BF5D881B622B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF8C12AB-6A43-4C03-A9BE-BF5D881B622B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

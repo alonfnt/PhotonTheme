@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Media.Effects;
+using PhotonTheme.Wpf.Extensions;
 
 namespace PhotonTheme.Wpf.Converters
 {

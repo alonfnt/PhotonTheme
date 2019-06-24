@@ -1,9 +1,10 @@
 using System;
 using System.Windows.Markup;
+using PhotonTheme.Wpf.PackIcon;
 
 namespace PhotonTheme.Wpf.Extensions
 {
-    [MarkupExtensionReturnType(typeof(PackIcon))]
+    [MarkupExtensionReturnType(typeof(PackIcon.PackIcon))]
     public class PackIconExtension : MarkupExtension
     {
         public PackIconExtension()
@@ -28,7 +29,7 @@ namespace PhotonTheme.Wpf.Extensions
 
         public override object ProvideValue(IServiceProvider serviceProvider)
         {
-            var result = new PackIcon { Kind = Kind };
+            var result = new PackIcon.PackIcon { Kind = Kind };
 
             if (Size.HasValue)
             {

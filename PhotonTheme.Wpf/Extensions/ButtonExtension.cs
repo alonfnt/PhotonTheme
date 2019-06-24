@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using PhotonTheme.Wpf.PackIcon;
 
 namespace PhotonTheme.Wpf.Extensions
 {

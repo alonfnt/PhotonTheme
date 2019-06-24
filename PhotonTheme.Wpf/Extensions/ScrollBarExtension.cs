@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace PhotonTheme.Wpf
+namespace PhotonTheme.Wpf.Extensions
 {
     public class ScrollBarExtension
     {

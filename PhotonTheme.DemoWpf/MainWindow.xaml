@@ -3,230 +3,34 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:extensions="clr-namespace:PhotonTheme.Wpf.Extensions;assembly=PhotonTheme.Wpf"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpf="clr-namespace:PhotonTheme.Wpf;assembly=PhotonTheme.Wpf"
-    Title="Clean Design Theme Demo App"
+    xmlns:demoWpf="clr-namespace:PhotonTheme.DemoWpf"
+    Title="Photon Theme Demo App WPF"
     Width="800"
-    Height="450"
+    Height="450" UseLayoutRounding="True"
     IsTabStop="False"
     mc:Ignorable="d">
-    <ScrollViewer>
-        <StackPanel Margin="16">
-            <TextBlock
-                HorizontalAlignment="Center"
-                Style="{StaticResource Heading1TextBlock}"
-                Text="Photon Design Theme for WPF" />
-            <Separator Margin="0,10" />
-
-            <!--#region Colors-->
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Style="{StaticResource Heading3TextBlock}" Text="Colors" />
-            </StackPanel>
-            <WrapPanel HorizontalAlignment="Center">
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource PrimaryBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource LightBrush}"
-                        Text="PrimaryColor - PrimaryBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource GreenBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource LightBrush}"
-                        Text="GreenColor - GreenBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource OrangeBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource LightBrush}"
-                        Text="OrangeColor - OrangeBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource RedBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource LightBrush}"
-                        Text="RedColor - RedBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource BlackBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource LightBrush}"
-                        Text="BlackColor - BlackBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource DarkBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource BlackBrush}"
-                        Text="DarkColor - DarkBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource MediumBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource BlackBrush}"
-                        Text="MediumColor - MediumBrush" />
-                </Border>
-                <Border
-                    Width="300"
-                    Height="100"
-                    Margin="10"
-                    Background="{StaticResource LightBrush}"
-                    CornerRadius="3">
-                    <TextBlock
-                        Margin="10"
-                        VerticalAlignment="Bottom"
-                        Foreground="{StaticResource BlackBrush}"
-                        Text="LightColor - LightBrush" />
-                </Border>
-            </WrapPanel>
-            <!--#endregion-->
-
-            <!--#region Typography-->
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Style="{StaticResource Heading3TextBlock}" Text="Typography" />
-            </StackPanel>
-            <Border
-                Margin="0,10"
-                Padding="16"
-                Background="{StaticResource MediumBrush}"
-                CornerRadius="4">
-                <StackPanel HorizontalAlignment="Stretch">
-                    <TextBlock Style="{StaticResource Heading1TextBlock}" Text="Heading 1" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource Heading2TextBlock}" Text="Heading 2" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource Heading3TextBlock}" Text="Heading 3" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource Heading4TextBlock}" Text="Heading 4" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource BoldLargeTextBlock}" Text="Bold L" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource BoldMediumTextBlock}" Text="Bold M" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource BoldSmallTextBlock}" Text="Bold S" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource ParagraphTextBlock}" Text="Paragraph" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource RegularLargeTextBlock}" Text="Regular L" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource RegularMediumTextBlock}" Text="Regular M (Default)" />
-                    <Separator Margin="0,5" Background="{StaticResource DarkBrush}" />
-                    <TextBlock Style="{StaticResource RegularSmallTextBlock}" Text="Regular S" />
-                </StackPanel>
-            </Border>
-
-            <!--#endregion Typography-->
-
-            <!--#region Buttons-->
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Style="{StaticResource Heading3TextBlock}" Text="Buttons" />
-            </StackPanel>
-            <Border
-                Margin="0,10"
-                Padding="16"
-                Background="{StaticResource LightBrush}"
-                CornerRadius="4">
-                <StackPanel>
-                    <TextBlock Text="Primary" Style="{StaticResource Heading4TextBlock}" Margin="0 10 0 5"/>
-                    <WrapPanel HorizontalAlignment="Stretch">
-                        <Button Content="Large" Style="{StaticResource LargeSquarePrimaryButton}" />
-                        <Button Content="Medium" Style="{StaticResource MediumSquarePrimaryButton}"/>
-                        <Button Content="Small" Style="{StaticResource SmallSquarePrimaryButton}"/>
-                        <Button Content="Large" Style="{StaticResource LargeRoundedPrimaryButton}"/>
-                        <Button Content="Medium" Style="{StaticResource MediumRoundedPrimaryButton}"/>
-                        <Button Content="Small" Style="{StaticResource SmallRoundedPrimaryButton}"/>
-                        <Button Content="Large" Style="{StaticResource LargeCircularPrimaryButton}"/>
-                        <Button Content="Medium" Style="{StaticResource MediumCircularPrimaryButton}"/>
-                        <Button Content="Small" Style="{StaticResource SmallCircularPrimaryButton}"/>
-                        <Button Content="Left Icon" Style="{StaticResource MediumCircularPrimaryButton}" wpf:ButtonExtension.LeftIconVisibility="Visible" wpf:ButtonExtension.LeftIcon="AccountArrowLeft"/>
-                        <Button Content="Right Icon" Style="{StaticResource MediumCircularPrimaryButton}" wpf:ButtonExtension.RightIconVisibility="Visible" wpf:ButtonExtension.RightIcon="Home"/>
-                    </WrapPanel>
-                    <TextBlock Text="Secondary" Style="{StaticResource Heading4TextBlock}" Margin="0 10 0 5"/>
-                    <WrapPanel HorizontalAlignment="Stretch">
-                        <Button Content="Large" Style="{StaticResource LargeSquareSecondaryButton}" />
-                        <Button Content="Medium" Style="{StaticResource MediumSquareSecondaryButton}"/>
-                        <Button Content="Small" Style="{StaticResource SmallSquareSecondaryButton}"/>
-                        <Button Content="Large" Style="{StaticResource LargeRoundedSecondaryButton}"/>
-                        <Button Content="Medium" Style="{StaticResource MediumRoundedSecondaryButton}"/>
-                        <Button Content="Small" Style="{StaticResource SmallRoundedSecondaryButton}"/>
-                        <Button Content="Large" Style="{StaticResource LargeCircularSecondaryButton}"/>
-                        <Button Content="Medium" Style="{StaticResource MediumCircularSecondaryButton}"/>
-                        <Button Content="Small" Style="{StaticResource SmallCircularSecondaryButton}"/>
-
-                        <Button Content="Left Icon" Style="{StaticResource MediumRoundedSecondaryButton}" wpf:ButtonExtension.LeftIconVisibility="Visible" wpf:ButtonExtension.LeftIcon="AccountArrowLeft"/>
-                        <Button Content="Right Icon" Style="{StaticResource MediumRoundedSecondaryButton}" wpf:ButtonExtension.RightIconVisibility="Visible" wpf:ButtonExtension.RightIcon="Home"/>
-                    </WrapPanel>
-                    <TextBlock Text="Disabled" Style="{StaticResource Heading4TextBlock}" Margin="0 10 0 5"/>
-                    <WrapPanel HorizontalAlignment="Stretch">
-                        <Button Content="Large" Style="{StaticResource LargeSquareSecondaryButton}" IsEnabled="False" />
-                        <Button Content="Medium" Style="{StaticResource MediumSquareSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Small" Style="{StaticResource SmallSquareSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Large" Style="{StaticResource LargeRoundedSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Medium" Style="{StaticResource MediumRoundedSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Small" Style="{StaticResource SmallRoundedSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Large" Style="{StaticResource LargeCircularSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Medium" Style="{StaticResource MediumCircularSecondaryButton}" IsEnabled="False"/>
-                        <Button Content="Small" Style="{StaticResource SmallCircularSecondaryButton}" IsEnabled="False"/>
-                    </WrapPanel>
-                    <TextBlock Text="Custom" Style="{StaticResource Heading4TextBlock}" Margin="0 10 0 5"/>
-                    <WrapPanel HorizontalAlignment="Stretch">
-                        <Button Content="Delete" Style="{StaticResource LargeSquarePrimaryButton}" Background="{StaticResource RedBrush}"/>
-                        <Button Content="Delete" Style="{StaticResource LargeRoundedPrimaryButton}" Background="{StaticResource RedBrush}"/>
-                        <Button Content="Delete" Style="{StaticResource LargeCircularPrimaryButton}" Background="{StaticResource RedBrush}"/>
-                        <Button Content="Approve" Style="{StaticResource MediumSquarePrimaryButton}" Background="{StaticResource GreenBrush}"/>
-                        <Button Content="Approve" Style="{StaticResource MediumRoundedPrimaryButton}" Background="{StaticResource GreenBrush}"/>
-                        <Button Content="Approve" Style="{StaticResource MediumCircularPrimaryButton}" Background="{StaticResource GreenBrush}"/>
-                        <Button Content="Alert" Style="{StaticResource SmallSquarePrimaryButton}" Background="{StaticResource OrangeBrush}"/>
-                        <Button Content="Alert" Style="{StaticResource SmallRoundedPrimaryButton}" Background="{StaticResource OrangeBrush}"/>
-                        <Button Content="Alert" Style="{StaticResource SmallCircularPrimaryButton}" Background="{StaticResource OrangeBrush}"/>
-                        <Button Content="Delete" Style="{StaticResource LargeSquarePrimaryButton}" Background="{StaticResource RedBrush}"  wpf:ButtonExtension.LeftIconVisibility="Visible" wpf:ButtonExtension.LeftIcon="TrashCan"/>
-                        <Button Content="Right Icon" Style="{StaticResource LargeSquarePrimaryButton}" Background="{StaticResource GreenBrush}" wpf:ButtonExtension.RightIconVisibility="Visible" wpf:ButtonExtension.RightIcon="Home"/>
-                    </WrapPanel>
-                </StackPanel>
-
-            </Border>
-            <!--#endregion-->
-        </StackPanel>
-    </ScrollViewer>
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TextBlock
+            HorizontalAlignment="Center"
+            Style="{StaticResource Heading1TextBlock}"
+            Text="Photon Theme for WPF" />
+        <TabControl Grid.Row="1">
+            <TabItem Header="Colors">
+                <demoWpf:Colors/>
+            </TabItem>
+            <TabItem Header="Typography">
+                <demoWpf:Typography/>
+            </TabItem>
+            <TabItem Header="Buttons">
+                <demoWpf:Buttons/>
+            </TabItem>
+        </TabControl>
+    </Grid>
 </Window>

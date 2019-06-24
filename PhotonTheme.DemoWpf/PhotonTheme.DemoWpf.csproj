@@ -55,6 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Colors.xaml.cs">
+      <DependentUpon>Colors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Typography.xaml.cs">
+      <DependentUpon>Typography.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Colors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,10 +77,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Buttons.xaml.cs">
+      <DependentUpon>Buttons.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Typography.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -95,7 +116,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PhotonDesign.Wpf\PhotonTheme.Wpf.csproj">
+    <ProjectReference Include="..\PhotonTheme.Wpf\PhotonTheme.Wpf.csproj">
       <Project>{ee4e0ef3-4dd6-48c0-bad0-5b736ad766e0}</Project>
       <Name>PhotonTheme.Wpf</Name>
     </ProjectReference>
