@@ -2,7 +2,7 @@
 This is a Toolkit that tries to help on the modernization of WPF applications. 
 The inital inspiration for this Design can be found in: [UI Design System](https://uidesignsystem.com/desktop.html)
 
-A lot of the controls I based them on the [Material Design Library](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit), which has done an excelent job on bringing the [Material Design](https://material.io/design/) to WPF.
+Some base controls and mostly the icon pack is from [Material Design Library](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit), which has done an excelent job on bringing the [Material Design](https://material.io/design/) to WPF.
 
 ## Getting Started
 
