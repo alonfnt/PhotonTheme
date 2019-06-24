@@ -53,7 +53,7 @@ Please read (*missing*) for details on our code of conduct, and the process for 
 | ProgressBar | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/11) | Pending |
 | Slider | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/12) | Pending |
 | Table | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/13) | Pending |
-| TabControl | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/14) | Pending |
+| TabControl | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/14) | In Progress |
 | Tooltip | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/15) | Pending |
 | DateTimePicker | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/16) | Pending |
 | Dialog | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/17) | Pending |
