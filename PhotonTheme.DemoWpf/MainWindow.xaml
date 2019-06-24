@@ -8,7 +8,7 @@
     xmlns:wpf="clr-namespace:PhotonTheme.Wpf;assembly=PhotonTheme.Wpf"
     xmlns:demoWpf="clr-namespace:PhotonTheme.DemoWpf"
     Title="Photon Theme Demo App WPF"
-    Width="800"
+    Width="800" Background="{StaticResource LightBrush}"
     Height="450" UseLayoutRounding="True"
     IsTabStop="False"
     mc:Ignorable="d">
@@ -18,10 +18,10 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <TextBlock
-            HorizontalAlignment="Center"
+            TextAlignment="Center"
             Style="{StaticResource Heading1TextBlock}"
             Text="Photon Theme for WPF" />
-        <TabControl Grid.Row="1">
+        <TabControl Grid.Row="1" TabStripPlacement="Top">
             <TabItem Header="Colors">
                 <demoWpf:Colors/>
             </TabItem>
