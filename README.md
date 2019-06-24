@@ -33,32 +33,32 @@ Please read (*missing*) for details on our code of conduct, and the process for 
 
 ## Styles discussions
 
-| Control| Discussion Issue | Status
+| Control| Discussion Issue | Status | Wiki
 | --- | --- | --- 
-| Colors | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/1) | In Progress
-| Typography | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/2) | In Progress
-| Icons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/3) | In Progress
-| Alerts | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/4) | Pending
-| Avatars | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/5) | Pending
-| Buttons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/6) | In Progress
-| Badges | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/7) | Pending
-| Combobox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending
-| PopupBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending
-| TextBox |[Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending
-| PasswordBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending
-| CheckBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending
-| RadioButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending
-| ToggleButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending
-| Headers | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/10) | Pending
-| ProgressBar | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/11) | Pending
-| Slider | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/12) | Pending
-| Table | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/13) | Pending
-| TabControl | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/14) | Pending
-| Tooltip | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/15) | Pending
-| DateTimePicker | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/16) | Pending
-| Dialog | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/17) | Pending
-| Notifications | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/18) | Pending
-| Navigation | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/19) | Pending
+| Colors | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/1) | In Progress | 
+| Typography | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/2) | In Progress |
+| Icons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/3) | In Progress |
+| Alerts | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/4) | Pending |
+| Avatars | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/5) | Pending |
+| Buttons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/6) | In Progress |
+| Badges | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/7) | Pending |
+| Combobox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending |
+| PopupBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending |
+| TextBox |[Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
+| PasswordBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
+| CheckBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
+| RadioButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
+| ToggleButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
+| Headers | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/10) | Pending |
+| ProgressBar | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/11) | Pending |
+| Slider | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/12) | Pending |
+| Table | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/13) | Pending |
+| TabControl | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/14) | Pending |
+| Tooltip | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/15) | Pending |
+| DateTimePicker | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/16) | Pending |
+| Dialog | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/17) | Pending |
+| Notifications | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/18) | Pending |
+| Navigation | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/19) | Pending |
 
 ## License
 
