@@ -2,12 +2,12 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Wpf;component/Themes/Generic.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!--  COMMON  -->
     <Style x:Key="BaseTextBlock" TargetType="{x:Type TextBlock}">
-        <Setter Property="FontFamily" Value="{StaticResource PhotonDesignFont}" />
+        <Setter Property="FontFamily" Value="{StaticResource PhotonThemeFont}" />
         <Setter Property="Foreground" Value="{StaticResource BlackBrush}" />
     </Style>
 

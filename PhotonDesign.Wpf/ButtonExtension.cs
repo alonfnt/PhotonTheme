@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     public class ButtonExtension
     {

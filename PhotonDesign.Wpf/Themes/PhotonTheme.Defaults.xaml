@@ -2,10 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <!-- This dictionary overrides the default themes -->
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/Generic.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.TextBlock.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.Button.xaml"/>
-        <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.ScrollBar.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Wpf;component/Themes/Generic.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Wpf;component/Themes/PhotonTheme.TextBlock.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Wpf;component/Themes/PhotonTheme.Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Wpf;component/Themes/PhotonTheme.ScrollBar.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type TextBlock}" BasedOn="{StaticResource RegularMediumTextBlock}" />

@@ -1,4 +1,4 @@
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     /// ******************************************
     /// This code is auto generated. Do not amend.

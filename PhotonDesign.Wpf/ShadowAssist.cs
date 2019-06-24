@@ -4,7 +4,7 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Effects;
 
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     public enum ShadowDepth
     {

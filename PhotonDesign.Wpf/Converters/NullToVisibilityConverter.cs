@@ -4,7 +4,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace PhotonDesign.Wpf.Converters
+namespace PhotonTheme.Wpf.Converters
 {
     public class NullableToVisibilityConverter : MarkupExtension, IValueConverter
     {

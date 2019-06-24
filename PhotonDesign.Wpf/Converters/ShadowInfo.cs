@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Media.Effects;
 
-namespace PhotonDesign.Wpf.Converters
+namespace PhotonTheme.Wpf.Converters
 {
     internal static class ShadowInfo
     {
@@ -11,7 +11,7 @@ namespace PhotonDesign.Wpf.Converters
 
         static ShadowInfo()
         {
-            var resourceDictionary = new ResourceDictionary { Source = new Uri("pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.Shadows.xaml", UriKind.Absolute) };
+            var resourceDictionary = new ResourceDictionary { Source = new Uri("pack://application:,,,/PhotonTheme.Wpf;component/Themes/PhotonTheme.Shadows.xaml", UriKind.Absolute) };
 
             ShadowsDictionary = new Dictionary<ShadowDepth, DropShadowEffect>
             {

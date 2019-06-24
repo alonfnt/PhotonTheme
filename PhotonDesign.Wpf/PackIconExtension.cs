@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Markup;
 
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     [MarkupExtensionReturnType(typeof(PackIcon))]
     public class PackIconExtension : MarkupExtension

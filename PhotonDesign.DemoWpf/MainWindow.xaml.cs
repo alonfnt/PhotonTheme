@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace PhotonDesign.DemoWpf
+namespace PhotonTheme.DemoWpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <FontFamily x:Key="PhotonDesignFont">pack://application:,,,/PhotonDesign.Wpf;component/Resources/Lato/#Lato</FontFamily>
+    <FontFamily x:Key="PhotonThemeFont">pack://application:,,,/PhotonTheme.Wpf;component/Resources/Lato/#Lato</FontFamily>
 
 </ResourceDictionary>

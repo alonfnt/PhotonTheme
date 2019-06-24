@@ -1,7 +1,7 @@
 using System.Windows;
 using System.Windows.Media;
 
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     public static class RippleAssist
     {

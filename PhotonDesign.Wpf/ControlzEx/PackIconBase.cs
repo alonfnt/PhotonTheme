@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace PhotonDesign.Wpf.ControlzEx
+namespace PhotonTheme.Wpf.ControlzEx
 {
     public abstract class PackIconBase : Control
     {

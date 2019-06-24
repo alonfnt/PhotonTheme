@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{EE4E0EF3-4DD6-48C0-BAD0-5B736AD766E0}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>PhotonDesign.Wpf</RootNamespace>
-    <AssemblyName>PhotonDesign.Wpf</AssemblyName>
+    <RootNamespace>PhotonTheme.Wpf</RootNamespace>
+    <AssemblyName>PhotonTheme.Wpf</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -89,35 +89,35 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Page Include="Themes\PhotonDesign.Button.xaml">
+    <Page Include="Themes\PhotonTheme.Button.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\PhotonDesign.Colors.xaml">
+    <Page Include="Themes\PhotonTheme.Colors.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\PhotonDesign.Defaults.xaml">
+    <Page Include="Themes\PhotonTheme.Defaults.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\PhotonDesign.Font.xaml">
+    <Page Include="Themes\PhotonTheme.Font.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Themes\PhotonDesign.ScrollBar.xaml">
+    <Page Include="Themes\PhotonTheme.ScrollBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\PhotonDesign.Shadows.xaml">
+    <Page Include="Themes\PhotonTheme.Shadows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\PhotonDesign.TextBlock.xaml">
+    <Page Include="Themes\PhotonTheme.TextBlock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Themes\PhotonDesign.Ripple.xaml">
+    <Page Include="Themes\PhotonTheme.Ripple.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

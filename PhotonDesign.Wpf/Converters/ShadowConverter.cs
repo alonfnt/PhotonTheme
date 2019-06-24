@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media.Effects;
 
-namespace PhotonDesign.Wpf.Converters
+namespace PhotonTheme.Wpf.Converters
 {
     public class ShadowConverter : IValueConverter
     {

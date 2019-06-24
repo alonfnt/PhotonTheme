@@ -8,7 +8,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     [TemplateVisualState(GroupName = "CommonStates", Name = TemplateStateNormal)]
     [TemplateVisualState(GroupName = "CommonStates", Name = TemplateStateMousePressed)]

@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using PhotonDesign.Wpf.ControlzEx;
+using PhotonTheme.Wpf.ControlzEx;
 
-namespace PhotonDesign.Wpf
+namespace PhotonTheme.Wpf
 {
     /// <summary>
     /// Icon from the Material Design Icons project, <see cref="https://materialdesignicons.com/"/>.
