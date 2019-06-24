@@ -34,7 +34,7 @@ Please read (*missing*) for details on our code of conduct, and the process for 
 ## Styles discussions
 
 | Control| Discussion Issue | Status | Wiki
-| --- | --- | --- 
+| --- | --- | --- | ---
 | Colors | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/1) | In Progress | 
 | Typography | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/2) | In Progress |
 | Icons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/3) | In Progress |
