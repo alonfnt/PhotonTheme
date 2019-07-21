@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PhotonTheme.Wpf.Properties {
+namespace PhotonTheme.Shared.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
