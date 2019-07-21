@@ -20,93 +20,97 @@
         </Grid.ColumnDefinitions>
         <!--  Title  -->
         <TextBlock Style="{StaticResource Heading3TextBlock}" Text="Interactive Demo Button" />
-        <TextBlock
-            Grid.Row="0"
-            Grid.Column="1"
-            Style="{StaticResource Heading4TextBlock}"
-            Text="Configuration" />
         <!--  Options  -->
-        <ScrollViewer Grid.Row="1" Grid.Column="1">
+        <TabControl BorderBrush="{StaticResource DarkBrush}" BorderThickness="1"
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Grid.Column="1">
+            <TabItem Header="Styles">
+                <ListBox BorderThickness="0" >
+                    <ListBoxItem Content="PrimarySmallSquareButton"/>
+                    <ListBoxItem Content="PrimarySmallRoundedButton"/>
+                </ListBox>
+            </TabItem>
+            <TabItem Header="Custom">
+                <ScrollViewer Grid.Row="1" Grid.Column="1">
+                    <StackPanel>
+                        <!--  Theme  -->
+                        <TextBlock Margin="4,4,4,0" Text="Theme" />
+                        <ComboBox
+                            Name="ThemeComboBox"
+                            Margin="4"
+                            SelectedIndex="0">
+                            <ComboBoxItem Content="Primary" />
+                            <ComboBoxItem Content="Secondary" />
+                            <ComboBoxItem Content="Custom" />
+                        </ComboBox>
 
-            <StackPanel>
-                <!--  Theme  -->
-                <TextBlock Margin="4,4,4,0" Text="Theme" />
-                <ComboBox
-                    Name="ThemeComboBox"
-                    Margin="4"
-                    SelectedIndex="0">
-                    <ComboBoxItem Content="Primary" />
-                    <ComboBoxItem Content="Secondary" />
-                    <ComboBoxItem Content="Custom" />
-                </ComboBox>
+                        <!--  Size  -->
+                        <TextBlock Margin="4,4,4,0" Text="Size" />
+                        <ComboBox Margin="4" SelectedIndex="0">
+                            <ComboBoxItem Content="Large" />
+                            <ComboBoxItem Content="Medium" />
+                            <ComboBoxItem Content="Small" />
+                        </ComboBox>
+                        <TextBlock Margin="4,4,4,0" Text=" Background Color" />
+                        <ComboBox Margin="4" SelectedIndex="0">
+                            <ComboBoxItem Content="Primary" />
+                            <ComboBoxItem Content="Green" />
+                            <ComboBoxItem Content="Orange" />
+                            <ComboBoxItem Content="Red" />
+                            <ComboBoxItem Content="Black" />
+                            <ComboBoxItem Content="Dark" />
+                            <ComboBoxItem Content="Medium" />
+                            <ComboBoxItem Content="Light" />
+                        </ComboBox>
+                        <TextBlock Margin="4,4,4,0" Text=" Foreground Color" />
+                        <ComboBox Margin="4" SelectedIndex="0">
+                            <ComboBoxItem Content="Primary" />
+                            <ComboBoxItem Content="Green" />
+                            <ComboBoxItem Content="Orange" />
+                            <ComboBoxItem Content="Red" />
+                            <ComboBoxItem Content="Black" />
+                            <ComboBoxItem Content="Dark" />
+                            <ComboBoxItem Content="Medium" />
+                            <ComboBoxItem Content="Light" />
+                        </ComboBox>
 
-                <!--  Size  -->
-                <TextBlock Margin="4,4,4,0" Text="Size" />
-                <ComboBox Margin="4" SelectedIndex="0">
-                    <ComboBoxItem Content="Large" />
-                    <ComboBoxItem Content="Medium" />
-                    <ComboBoxItem Content="Small" />
-                </ComboBox>
-
-                <TextBlock Margin="4,4,4,0" Text=" Background Color" />
-                <ComboBox Margin="4" SelectedIndex="0">
-                    <ComboBoxItem Content="Primary" />
-                    <ComboBoxItem Content="Green" />
-                    <ComboBoxItem Content="Orange" />
-                    <ComboBoxItem Content="Red" />
-                    <ComboBoxItem Content="Black" />
-                    <ComboBoxItem Content="Dark" />
-                    <ComboBoxItem Content="Medium" />
-                    <ComboBoxItem Content="Light" />
-                </ComboBox>
-
-                <TextBlock Margin="4,4,4,0" Text=" Foreground Color" />
-                <ComboBox Margin="4" SelectedIndex="0">
-                    <ComboBoxItem Content="Primary" />
-                    <ComboBoxItem Content="Green" />
-                    <ComboBoxItem Content="Orange" />
-                    <ComboBoxItem Content="Red" />
-                    <ComboBoxItem Content="Black" />
-                    <ComboBoxItem Content="Dark" />
-                    <ComboBoxItem Content="Medium" />
-                    <ComboBoxItem Content="Light" />
-                </ComboBox>
-
-                <TextBlock Margin="4,4,4,0" Text="Shape" />
-                <RadioButton
-                    Name="SquareButton"
-                    Margin="4,2"
-                    Content="Square"
-                    IsChecked="True" />
-                <RadioButton
-                    x:Name="RoundButton"
-                    Margin="4,2"
-                    Content="Round" />
-                <RadioButton
-                    Name="CircularButton"
-                    Margin="4,2,4,4"
-                    Content="Circular" />
-
-                <CheckBox
-                    x:Name="ButtonIsEnabled"
-                    Margin="4"
-                    Content="Enabled"
-                    IsChecked="True" />
-                <TextBlock Margin="4,4,4,0" Text="Content" />
-                <TextBox
-                    x:Name="ButtonContentText"
-                    Margin="4"
-                    Text="Button" />
-                <CheckBox
-                    x:Name="ButtonTrailingIcon"
-                    Margin="4"
-                    Content="Trailing icon" />
-                <CheckBox
-                    x:Name="ButtonLeadingIcon"
-                    Margin="4"
-                    Content="Leading icon" />
-            </StackPanel>
-        </ScrollViewer>
+                        <TextBlock Margin="4,4,4,0" Text="Shape" />
+                        <RadioButton
+                            Name="SquareButton"
+                            Margin="4,2"
+                            Content="Square"
+                            IsChecked="True" />
+                        <RadioButton
+                            x:Name="RoundButton"
+                            Margin="4,2"
+                            Content="Round" />
+                        <RadioButton
+                            Name="CircularButton"
+                            Margin="4,2,4,4"
+                            Content="Circular" />
+                        <CheckBox
+                            x:Name="ButtonIsEnabled"
+                            Margin="4"
+                            Content="Enabled"
+                            IsChecked="True" />
+                        <TextBlock Margin="4,4,4,0" Text="Content" />
+                        <TextBox
+                            x:Name="ButtonContentText"
+                            Margin="4"
+                            Text="Button" />
+                        <CheckBox
+                            x:Name="ButtonTrailingIcon"
+                            Margin="4"
+                            Content="Trailing icon" />
+                        <CheckBox
+                            x:Name="ButtonLeadingIcon"
+                            Margin="4"
+                            Content="Leading icon" />
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
 
         <!--  SHOWCASE  -->
         <Button
