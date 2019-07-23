@@ -1,13 +1,19 @@
 # PhotonTheme
+
 This is a Toolkit that tries to help on the modernization of WPF applications. 
 The inital inspiration for this Design can be found in: [UI Design System](https://uidesignsystem.com/desktop.html)
 
 Some base controls and mostly the icon pack is from [Material Design Library](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit), which has done an excelent job on bringing the [Material Design](https://material.io/design/) to WPF.
 
+This library currently works with **.Net Core 3.0**. 
+
 ## Getting Started
 
 
-+ Install the Nuget Package (*Pending*)
++ Install the Nuget Package 
+ 
+ `Install-Package PhotonTheme`
+
 + In the App.xaml file, add the followinf ResourceDictionary:
 ```
 <Application . . . >
@@ -26,10 +32,6 @@ Some base controls and mostly the icon pack is from [Material Design Library](ht
 Every realease comes with a precompile demo to test all the styles. You can dowload it here: (*missing*)
 
 (*Add Screenshots of the Demo*)
-
-## Contributing
-
-Please read (*missing*) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Styles discussions
 
