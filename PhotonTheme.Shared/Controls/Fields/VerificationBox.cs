@@ -26,7 +26,7 @@ namespace PhotonTheme.Shared.Controls.Fields
         }
 
         public static readonly DependencyProperty IsErrorProperty =
-            DependencyProperty.Register("IsError", typeof(bool), typeof(VerificationBox), new PropertyMetadata(false));
+            DependencyProperty.Register(nameof(IsError), typeof(bool), typeof(VerificationBox), new PropertyMetadata(false));
 
         #endregion
 
@@ -39,7 +39,7 @@ namespace PhotonTheme.Shared.Controls.Fields
         }
 
         public static readonly DependencyProperty IsSuccessProperty =
-            DependencyProperty.Register("IsSuccess", typeof(bool), typeof(VerificationBox), new PropertyMetadata(false));
+            DependencyProperty.Register(nameof(IsSuccess), typeof(bool), typeof(VerificationBox), new PropertyMetadata(false));
 
         #endregion
 

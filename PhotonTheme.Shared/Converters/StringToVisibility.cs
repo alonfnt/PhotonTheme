@@ -1,11 +1,4 @@
-﻿// // --------------------------------------------------------------------------------------------------------------------
-// // <copyright file="StringToVisibility.cs" company="Nucleids Applied Science">
-// //   All rights reserved.
-// // 2019 / 07 / 23
-// // PhotonTheme / PhotonTheme.Shared
-// // </copyright>
-// // --------------------------------------------------------------------------------------------------------------------
-using System;
+﻿using System;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
@@ -15,11 +8,9 @@ namespace PhotonTheme.Shared.Converters
 {
     public class StringToVisibility : MarkupExtension, IValueConverter
     {
-        public bool Inverted { get; set; }
-        public override object ProvideValue(IServiceProvider serviceProvider)
-        {
-            return this;
-        }
+        public bool Inverted { private get; set; }
+
+        public override object ProvideValue(IServiceProvider serviceProvider) => this;
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

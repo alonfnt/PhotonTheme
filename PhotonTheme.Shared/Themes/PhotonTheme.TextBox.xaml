@@ -3,8 +3,8 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:converters="clr-namespace:PhotonTheme.Shared.Converters"
     xmlns:extensions="clr-namespace:PhotonTheme.Shared.Extensions"
-    xmlns:local="clr-namespace:PhotonTheme.Shared.Themes"
     xmlns:fields="clr-namespace:PhotonTheme.Shared.Controls.Fields"
+    xmlns:local="clr-namespace:PhotonTheme.Shared.Themes"
     xmlns:packIcon="clr-namespace:PhotonTheme.Shared.PackIcon">
 
     <ResourceDictionary.MergedDictionaries>
@@ -67,10 +67,10 @@
                             <Setter TargetName="border" Property="Opacity" Value="0.4" />
                             <Setter TargetName="border" Property="Background" Value="{DynamicResource MediumBrush}" />
                             <Setter TargetName="Placeholder" Property="Opacity" Value="0.4" />
-                            <Setter Property="Foreground" Value="{StaticResource DarkBrush}"/>
+                            <Setter Property="Foreground" Value="{StaticResource DarkBrush}" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="BorderThickness" Value="2"/>
+                            <Setter TargetName="border" Property="BorderThickness" Value="2" />
                         </Trigger>
                         <Trigger Property="IsFocused" Value="True">
                             <Setter TargetName="border" Property="BorderThickness" Value="2" />
@@ -91,9 +91,12 @@
         </Setter>
     </Style>
 
-    <!-- Verification TextBox -->
-    <Style x:Key="VerificationBaseTextBox" TargetType="fields:VerificationBox" BasedOn="{StaticResource BaseTextBox}">
-        <Setter Property="VerticalAlignment" Value="Center"/>
+    <!--  Verification TextBox  -->
+    <Style
+        x:Key="VerificationBaseTextBox"
+        BasedOn="{StaticResource BaseTextBox}"
+        TargetType="fields:VerificationBox">
+        <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="fields:VerificationBox">
@@ -117,16 +120,22 @@
                             Visibility="{TemplateBinding Text,
                                                          Converter={converters:StringToVisibility Inverted=True}}" />
                         <DockPanel>
-                            <packIcon:PackIcon x:Name="icon" Width="18" Height="18" DockPanel.Dock="Right" Margin="{TemplateBinding Padding}" Kind="CheckBox"/>
+                            <packIcon:PackIcon
+                                x:Name="icon"
+                                Width="18"
+                                Height="18"
+                                Margin="{TemplateBinding Padding}"
+                                DockPanel.Dock="Right"
+                                Kind="CheckBox" />
                             <ScrollViewer
-                            x:Name="PART_ContentHost"
-                            Margin="-2,0"
-                            Padding="{TemplateBinding Padding}"
-                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
-                            Focusable="false"
-                            HorizontalScrollBarVisibility="Hidden"
-                            Style="{x:Null}"
-                            VerticalScrollBarVisibility="Hidden" />
+                                x:Name="PART_ContentHost"
+                                Margin="-2,0"
+                                Padding="{TemplateBinding Padding}"
+                                VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Focusable="false"
+                                HorizontalScrollBarVisibility="Hidden"
+                                Style="{x:Null}"
+                                VerticalScrollBarVisibility="Hidden" />
                         </DockPanel>
                     </Grid>
                     <ControlTemplate.Triggers>
@@ -134,10 +143,10 @@
                             <Setter TargetName="border" Property="Opacity" Value="0.4" />
                             <Setter TargetName="border" Property="Background" Value="{DynamicResource MediumBrush}" />
                             <Setter TargetName="Placeholder" Property="Opacity" Value="0.4" />
-                            <Setter Property="Foreground" Value="{StaticResource DarkBrush}"/>
+                            <Setter Property="Foreground" Value="{StaticResource DarkBrush}" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="border" Property="BorderThickness" Value="2"/>
+                            <Setter TargetName="border" Property="BorderThickness" Value="2" />
                         </Trigger>
                         <Trigger Property="IsFocused" Value="True">
                             <Setter TargetName="border" Property="BorderThickness" Value="2" />
@@ -153,23 +162,23 @@
                             </MultiTrigger.Setters>
                         </MultiTrigger>
                         <Trigger Property="IsError" Value="True">
-                            <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource RedBrush}"/>
-                            <Setter TargetName="icon" Property="Kind" Value="ErrorOutline"/>
+                            <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource RedBrush}" />
+                            <Setter TargetName="icon" Property="Kind" Value="ErrorOutline" />
                             <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource RedBrush}" />
                         </Trigger>
                         <Trigger Property="IsSuccess" Value="True">
-                            <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource GreenBrush}"/>
-                            <Setter TargetName="icon" Property="Kind" Value="Check"/>
+                            <Setter TargetName="icon" Property="Foreground" Value="{DynamicResource GreenBrush}" />
+                            <Setter TargetName="icon" Property="Kind" Value="Check" />
                             <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource GreenBrush}" />
                         </Trigger>
 
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
-                                <Condition Property="IsError" Value="False"/>
-                                <Condition Property="IsSuccess" Value="False"/>
+                                <Condition Property="IsError" Value="False" />
+                                <Condition Property="IsSuccess" Value="False" />
                             </MultiTrigger.Conditions>
                             <MultiTrigger.Setters>
-                                <Setter TargetName="icon" Property="Visibility" Value="Collapsed"/>
+                                <Setter TargetName="icon" Property="Visibility" Value="Collapsed" />
                             </MultiTrigger.Setters>
                         </MultiTrigger>
                     </ControlTemplate.Triggers>
