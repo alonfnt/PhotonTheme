@@ -1,12 +1,12 @@
 ﻿<Window
-    x:Class="PhotonTheme.DemoWpf.MainWindow"
+    x:Class="PhotonTheme.WpfDemo.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:extensions="clr-namespace:PhotonTheme.Shared.Extensions;assembly=PhotonTheme.Shared"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpf="clr-namespace:PhotonTheme.Shared;assembly=PhotonTheme.Shared"
-    xmlns:demoWpf="clr-namespace:PhotonTheme.DemoWpf"
+    xmlns:wpfDemo="clr-namespace:PhotonTheme.WpfDemo"
     Title="Photon Theme Demo App WPF"
     Width="800" Background="{StaticResource LightBrush}"
     Height="450" UseLayoutRounding="True"
@@ -22,26 +22,18 @@
             Style="{StaticResource Heading2TextBlock}"
             Text="Photon Theme for WPF" />
         <TabControl Grid.Row="1" TabStripPlacement="Top"  >
+            <TabItem Header="Buttons">
+                <wpfDemo:Buttons/>
+            </TabItem>
+            <TabItem Header="Fields">
+                <wpfDemo:Fields/>
+            </TabItem>
             <TabItem Header="Colors">
-                <demoWpf:Colors/>
+                <wpfDemo:Colors/>
             </TabItem>
             <TabItem Header="Typography">
-                <demoWpf:Typography/>
+                <wpfDemo:Typography/>
             </TabItem>
-            <TabItem Header="Buttons">
-                <demoWpf:Buttons/>
-            </TabItem>
-            <TabItem Header="Fields"/>
-            <TabItem Header="Toggles"/>
-            <TabItem Header="Dropdowns"/>
-            <TabItem Header="Alerts"/>
-            <TabItem Header="Progress bars"/>
-            <TabItem Header="Sliders"/>
-            <TabItem Header="Tables"/>
-            <TabItem Header="Tabs"/>
-            <TabItem Header="Dialogs"/>
-            <TabItem Header="Notifications"/>
-            <TabItem Header="Navigation"/>
 
         </TabControl>
     </Grid>

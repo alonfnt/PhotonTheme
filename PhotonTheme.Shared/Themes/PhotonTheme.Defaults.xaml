@@ -1,4 +1,6 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:fields="clr-namespace:PhotonTheme.Shared.Controls.Fields">
 
     <!--  This dictionary overrides the default themes  -->
     <ResourceDictionary.MergedDictionaries>
@@ -7,10 +9,13 @@
         <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Shared;component/Themes/PhotonTheme.Button.xaml" />
         <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Shared;component/Themes/PhotonTheme.ScrollBar.xaml" />
         <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Shared;component/Themes/PhotonTheme.TabControl.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Shared;component/Themes/PhotonTheme.TextBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style BasedOn="{StaticResource MinimalScrollBar}" TargetType="{x:Type ScrollBar}" />
     <Style BasedOn="{StaticResource PrimaryTabControl}" TargetType="{x:Type TabControl}" />
     <Style BasedOn="{StaticResource RegularMediumTextBlock}" TargetType="{x:Type TextBlock}" />
+    <Style BasedOn="{StaticResource BaseTextBox}" TargetType="{x:Type TextBox}" />
+    <Style BasedOn="{StaticResource VerificationBaseTextBox}" TargetType="{x:Type fields:VerificationBox}"/>
 
 </ResourceDictionary>

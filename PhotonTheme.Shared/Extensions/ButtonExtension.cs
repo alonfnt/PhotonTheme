@@ -9,7 +9,7 @@ namespace PhotonTheme.Shared.Extensions
         /// Controls the corner radius of the Button
         /// </summary>
         public static readonly DependencyProperty CornerRadiusProperty = DependencyProperty.RegisterAttached(
-            "CornerRadius", typeof(CornerRadius), typeof(ButtonExtension), new PropertyMetadata(new CornerRadius(2.0)));
+            "CornerRadius", typeof(CornerRadius), typeof(ButtonExtension), new PropertyMetadata(new CornerRadius(4.0)));
 
         /// <summary>
         /// Controls the left PackIconType and its visibility

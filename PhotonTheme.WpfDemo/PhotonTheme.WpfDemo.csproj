@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fields.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PhotonTheme.Shared\PhotonTheme.Shared.csproj" />
   </ItemGroup>
 
