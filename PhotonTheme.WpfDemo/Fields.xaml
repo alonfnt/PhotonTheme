@@ -1,0 +1,57 @@
+﻿<UserControl
+    x:Class="PhotonTheme.WpfDemo.Fields"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:extensions="clr-namespace:PhotonTheme.Shared.Extensions;assembly=PhotonTheme.Shared"
+    xmlns:fields="clr-namespace:PhotonTheme.Shared.Controls.Fields;assembly=PhotonTheme.Shared"
+    xmlns:local="clr-namespace:PhotonTheme.WpfDemo"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Border CornerRadius="4" Margin="8" Background="{StaticResource LightBrush}" Padding="9">
+            <StackPanel>
+                <TextBlock
+                    Margin="8"
+                    Style="{StaticResource Heading4TextBlock}"
+                    Text="TextBox" />
+                <TextBox
+                    Margin="8"
+                    VerticalAlignment="Center" />
+                <TextBox
+                    Margin="8"
+                    extensions:FieldExtension.Placeholder="Placeholder"
+                    VerticalAlignment="Center" />
+                <TextBox
+                    Margin="8"
+                    VerticalAlignment="Center"
+                    IsReadOnly="True"
+                    Text="Is Read Only" />
+                <TextBox
+                    Margin="8"
+                    VerticalAlignment="Center"
+                    IsEnabled="False"
+                    Text="Disabled" />
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Margin="8" CornerRadius="4" Background="{StaticResource LightBrush}" Padding="9">
+            <StackPanel >
+                <TextBlock
+                Margin="8"
+                Style="{StaticResource Heading4TextBlock}"
+                Text="VerificationBox" />
+                <fields:VerificationBox
+                x:Name="VerificationBox"
+                Margin="8"
+                extensions:FieldExtension.Placeholder="Type 'success' or 'error'..." />
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

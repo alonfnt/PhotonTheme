@@ -26,4 +26,5 @@ namespace PhotonTheme.Shared.Converters
             return this;
         }
     }
+
 }

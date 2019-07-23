@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +29,7 @@
     <None Remove="Themes\PhotonTheme.Shadows.xaml" />
     <None Remove="Themes\PhotonTheme.TabControl.xaml" />
     <None Remove="Themes\PhotonTheme.TextBlock.xaml" />
+    <None Remove="Themes\PhotonTheme.TextBox.xaml" />
   </ItemGroup>
 
   <ItemGroup>
