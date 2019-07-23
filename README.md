@@ -44,7 +44,7 @@ Please read (*missing*) for details on our code of conduct, and the process for 
 | Badges | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/7) | Pending |
 | Combobox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending |
 | PopupBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending |
-| TextBox |[Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
+| TextBox |[Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | In Progress |
 | PasswordBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
 | CheckBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
 | RadioButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
