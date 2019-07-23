@@ -6,6 +6,19 @@
     <UseWPF>true</UseWPF>
     <ApplicationIcon />
     <StartupObject />
+    <PackageId>PhotonTheme</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Albert Alonso</Authors>
+    <Product>Photon Theme</Product>
+    <Description>A new clean and modern theme to use in your WPF applications. It also includes new controls missing from the default WPF toolkit.</Description>
+    <Copyright>MIT License</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/AlbertAlonso/PhotonTheme</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/AlbertAlonso/PhotonTheme</RepositoryUrl>
+    <RepositoryType>WPF Theme</RepositoryType>
+    <PackageTags>WPF, UI, Theme, XAML, Design, Photon</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
