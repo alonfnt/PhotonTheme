@@ -1,0 +1,191 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:PhotonTheme.Controls"
+    xmlns:converters="clr-namespace:PhotonTheme.Utilities.Converters">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Base/ButtonBase.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  Primary  -->
+    <Style
+        x:Key="PrimaryButton"
+        BasedOn="{StaticResource BaseButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="Foreground" Value="{StaticResource LightBrush}" />
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}" />
+    </Style>
+
+    <!--  Secondary  -->
+    <Style
+        x:Key="SecondaryButton"
+        BasedOn="{StaticResource BaseButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="Foreground" Value="{StaticResource PrimaryBrush}" />
+        <Setter Property="Background" Value="{StaticResource LightBrush}" />
+    </Style>
+
+    <!--  Large Square Primary Button  -->
+    <Style
+        x:Key="LargeSquarePrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="16" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="0" />
+    </Style>
+
+    <!--  Medium Square Primary Button  -->
+    <Style
+        x:Key="MediumSquarePrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="14" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="0" />
+    </Style>
+
+    <!--  Small Square Primary Button  -->
+    <Style
+        x:Key="SmallSquarePrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="11" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="0" />
+    </Style>
+
+    <!--  Large Rounded Primary Button  -->
+    <Style
+        x:Key="LargeRoundedPrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="16" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="4" />
+    </Style>
+
+    <!--  Medium Rounded Primary Button  -->
+    <Style
+        x:Key="MediumRoundedPrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="14" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="4" />
+    </Style>
+
+    <!--  Small Rounded Primary Button  -->
+    <Style
+        x:Key="SmallRoundedPrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="11" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="4" />
+    </Style>
+
+    <!--  Large Circular Primary Button  -->
+    <Style
+        x:Key="LargeCircularPrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="16" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="15" />
+    </Style>
+
+    <!--  Medium Circular Primary Button  -->
+    <Style
+        x:Key="MediumCircularPrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="14" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="12" />
+    </Style>
+
+    <!--  Small Circular Primary Button  -->
+    <Style
+        x:Key="SmallCircularPrimaryButton"
+        BasedOn="{StaticResource PrimaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="11" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="10" />
+    </Style>
+
+    <!--  Large Square Secondary Button  -->
+    <Style
+        x:Key="LargeSquareSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="16" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="0" />
+    </Style>
+
+    <!--  Medium Square Secondary Button  -->
+    <Style
+        x:Key="MediumSquareSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="14" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="0" />
+    </Style>
+
+    <!--  Small Square Secondary Button  -->
+    <Style
+        x:Key="SmallSquareSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="11" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="0" />
+    </Style>
+
+    <!--  Large Rounded Secondary Button  -->
+    <Style
+        x:Key="LargeRoundedSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="16" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="4" />
+    </Style>
+
+    <!--  Medium Rounded Secondary Button  -->
+    <Style
+        x:Key="MediumRoundedSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="14" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="4" />
+    </Style>
+
+    <!--  Small Rounded Secondary Button  -->
+    <Style
+        x:Key="SmallRoundedSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="11" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="4" />
+    </Style>
+
+    <!--  Large Circular Secondary Button  -->
+    <Style
+        x:Key="LargeCircularSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="16" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="15" />
+    </Style>
+
+    <!--  Medium Circular Secondary Button  -->
+    <Style
+        x:Key="MediumCircularSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="14" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="12" />
+    </Style>
+
+    <!--  Small Circular Secondary Button  -->
+    <Style
+        x:Key="SmallCircularSecondaryButton"
+        BasedOn="{StaticResource SecondaryButton}"
+        TargetType="{x:Type ButtonBase}">
+        <Setter Property="TextBlock.FontSize" Value="11" />
+        <Setter Property="controls:ButtonExtension.CornerRadius" Value="10" />
+    </Style>
+</ResourceDictionary>

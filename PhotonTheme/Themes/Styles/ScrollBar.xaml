@@ -1,0 +1,26 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:PhotonTheme.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Base/ScrollBarBase.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  region PhotonScrollBar  -->
+    <Style
+        x:Key="PhotonScrollBar"
+        BasedOn="{StaticResource BaseScrollBar}"
+        TargetType="{x:Type ScrollBar}" />
+    <!--  endregion  -->
+
+    <!--  region MinimalScrollBar  -->
+    <Style
+        x:Key="MinimalScrollBar"
+        BasedOn="{StaticResource BaseScrollBar}"
+        TargetType="{x:Type ScrollBar}">
+        <Setter Property="controls:ScrollBarExtension.ArrowsVisibility" Value="Collapsed" />
+    </Style>
+    <!--  endregion  -->
+
+</ResourceDictionary>

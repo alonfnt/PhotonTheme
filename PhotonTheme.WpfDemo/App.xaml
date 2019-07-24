@@ -5,7 +5,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/PhotonTheme.Shared;component/Themes/PhotonTheme.Defaults.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/PhotonTheme;component/Themes/Defaults.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

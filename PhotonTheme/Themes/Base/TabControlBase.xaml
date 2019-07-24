@@ -1,0 +1,219 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Generic.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="TopTabItemStyle" TargetType="TabItem">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Grid Cursor="Hand">
+                        <Border
+                            Name="CoverLine"
+                            Margin="0,0,0,-1"
+                            Background="White"
+                            BorderThickness="0,1,0,0"
+                            Opacity="0" />
+                        <Border
+                            Name="container"
+                            Padding="16,10"
+                            Background="{DynamicResource LightBrush}"
+                            BorderThickness="0,2,0,0">
+                            <TextBlock
+                                Name="header"
+                                FontWeight="{TemplateBinding FontWeight}"
+                                Foreground="{TemplateBinding Foreground}"
+                                Text="{TemplateBinding Header}" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="container" Property="BorderBrush" Value="{DynamicResource PrimaryBrush}" />
+                            <Setter TargetName="container" Property="Background" Value="White" />
+                            <Setter TargetName="header" Property="Foreground" Value="{DynamicResource PrimaryBrush}" />
+                            <Setter TargetName="CoverLine" Property="Opacity" Value="1" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter TargetName="header" Property="Foreground" Value="{DynamicResource BlackBrush}" />
+                            <Setter TargetName="header" Property="Opacity" Value="0.5" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True" />
+                                <Condition Property="IsSelected" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="container" Property="Background" Value="{DynamicResource MediumBrush}" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BottomTabItemStyle" TargetType="TabItem">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Grid Cursor="Hand">
+                        <Border
+                            Name="CoverLine"
+                            Margin="0,-2,0,0"
+                            Background="White"
+                            BorderThickness="0,0,0,0"
+                            Opacity="0" />
+                        <Border
+                            Name="container"
+                            Padding="16,10"
+                            Background="{DynamicResource LightBrush}"
+                            BorderThickness="0,0,0,2">
+                            <ContentPresenter
+                                Name="header"
+                                Content="{TemplateBinding Header}"
+                                TextBlock.FontWeight="{TemplateBinding FontWeight}"
+                                TextBlock.Foreground="Red" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="container" Property="BorderBrush" Value="{DynamicResource PrimaryBrush}" />
+                            <Setter TargetName="container" Property="Background" Value="White" />
+                            <Setter TargetName="CoverLine" Property="Opacity" Value="1" />
+                            <Setter TargetName="header" Property="TextBlock.Foreground" Value="{DynamicResource PrimaryBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter TargetName="header" Property="TextBlock.Foreground" Value="{DynamicResource DarkBrush}" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True" />
+                                <Condition Property="IsSelected" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="container" Property="Background" Value="#eee" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LeftTabItemStyle" TargetType="TabItem">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Grid Cursor="Hand">
+                        <Border
+                            Name="CoverLine"
+                            Margin="0,0,-2,0"
+                            Background="White"
+                            BorderThickness="0,0,0,0"
+                            Opacity="0" />
+                        <Border
+                            Name="container"
+                            Padding="16,10"
+                            Background="{DynamicResource LightBrush}"
+                            BorderThickness="2,0,0,0">
+                            <ContentPresenter
+                                Name="header"
+                                Content="{TemplateBinding Header}"
+                                TextBlock.FontWeight="{TemplateBinding FontWeight}"
+                                TextBlock.Foreground="Red" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="container" Property="BorderBrush" Value="{DynamicResource PrimaryBrush}" />
+                            <Setter TargetName="container" Property="Background" Value="White" />
+                            <Setter TargetName="CoverLine" Property="Opacity" Value="1" />
+                            <Setter TargetName="header" Property="TextBlock.Foreground" Value="{DynamicResource PrimaryBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter TargetName="header" Property="TextBlock.Foreground" Value="{DynamicResource DarkBrush}" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True" />
+                                <Condition Property="IsSelected" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="container" Property="Background" Value="#eee" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="RightTabItemStyle" TargetType="TabItem">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Grid Cursor="Hand">
+                        <Border
+                            Name="CoverLine"
+                            Margin="-2,0,0,0"
+                            Background="White"
+                            BorderThickness="0,0,0,0"
+                            Opacity="0" />
+                        <Border
+                            Name="container"
+                            Padding="16,10"
+                            Background="{DynamicResource LightBrush}"
+                            BorderThickness="0,0,2,0">
+                            <ContentPresenter
+                                Name="header"
+                                Content="{TemplateBinding Header}"
+                                TextBlock.FontWeight="{TemplateBinding FontWeight}"
+                                TextBlock.Foreground="Red" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="container" Property="BorderBrush" Value="{DynamicResource PrimaryBrush}" />
+                            <Setter TargetName="container" Property="Background" Value="White" />
+                            <Setter TargetName="CoverLine" Property="Opacity" Value="1" />
+                            <Setter TargetName="header" Property="TextBlock.Foreground" Value="{DynamicResource PrimaryBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter TargetName="header" Property="TextBlock.Foreground" Value="{DynamicResource DarkBrush}" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True" />
+                                <Condition Property="IsSelected" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="container" Property="Background" Value="#eee" />
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BaseTabControl" TargetType="TabControl">
+        <Setter Property="BorderThickness" Value="0,1,0,0" />
+        <Setter Property="BorderBrush" Value="{DynamicResource DarkBrush}" />
+        <Setter Property="Padding" Value="6" />
+        <Setter Property="ItemContainerStyle" Value="{StaticResource TopTabItemStyle}" />
+        <Setter Property="Background" Value="White" />
+        <Style.Triggers>
+            <Trigger Property="TabStripPlacement" Value="Left">
+                <Setter Property="BorderThickness" Value="1,0,0,0" />
+                <Setter Property="ItemContainerStyle" Value="{StaticResource LeftTabItemStyle}" />
+            </Trigger>
+            <Trigger Property="TabStripPlacement" Value="Bottom">
+                <Setter Property="BorderThickness" Value="0,0,0,1" />
+                <Setter Property="ItemContainerStyle" Value="{StaticResource BottomTabItemStyle}" />
+            </Trigger>
+            <Trigger Property="TabStripPlacement" Value="Right">
+                <Setter Property="BorderThickness" Value="0,0,1,0" />
+                <Setter Property="ItemContainerStyle" Value="{StaticResource RightTabItemStyle}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:PhotonTheme.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Base/VerificationBoxBase.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- region Default -->
+
+    <Style x:Key="PhotonVerificationBox" BasedOn="{StaticResource BaseVerificationBox}" TargetType="{x:Type controls:VerificationBox}"/>
+
+    <!-- endregion-->
+</ResourceDictionary>

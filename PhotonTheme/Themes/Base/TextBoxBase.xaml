@@ -1,0 +1,87 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:extensions="clr-namespace:PhotonTheme.Controls"
+                    xmlns:converters="clr-namespace:PhotonTheme.Utilities.Converters">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../Generic.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="BaseTextBox" TargetType="{x:Type TextBox}">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MediumBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource BlackBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CaretBrush" Value="{DynamicResource PrimaryTextBrush}" />
+        <Setter Property="extensions:FieldExtension.CornerRadius" Value="4" />
+        <Setter Property="KeyboardNavigation.TabNavigation" Value="None" />
+        <Setter Property="extensions:ShadowExtension.ShadowDepth" Value="Depth0" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+        <Setter Property="AllowDrop" Value="true" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="FontWeight" Value="Regular" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst" />
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TextBox}">
+                    <Grid>
+                        <Border
+                            x:Name="border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="{Binding Path=(extensions:FieldExtension.CornerRadius), RelativeSource={RelativeSource TemplatedParent}}"
+                            Effect="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=(extensions:ShadowExtension.ShadowDepth), Converter={x:Static converters:ShadowConverter.Instance}}"
+                            SnapsToDevicePixels="True" />
+                        <TextBlock
+                            x:Name="Placeholder"
+                            Margin="{TemplateBinding Padding}"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="{DynamicResource DarkBrush}"
+                            Text="{Binding Path=(extensions:FieldExtension.Placeholder), RelativeSource={RelativeSource TemplatedParent}}"
+                            Visibility="{TemplateBinding Text,
+                                                         Converter={converters:StringToVisibility Inverted=True}}" />
+                        <ScrollViewer
+                            x:Name="PART_ContentHost"
+                            Margin="-2,0"
+                            Padding="{TemplateBinding Padding}"
+                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                            Focusable="false"
+                            HorizontalScrollBarVisibility="Hidden"
+                            Style="{x:Null}"
+                            VerticalScrollBarVisibility="Hidden" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter TargetName="border" Property="Opacity" Value="0.4" />
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource MediumBrush}" />
+                            <Setter TargetName="Placeholder" Property="Opacity" Value="0.4" />
+                            <Setter Property="Foreground" Value="{StaticResource DarkBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="BorderThickness" Value="2" />
+                        </Trigger>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter TargetName="border" Property="BorderThickness" Value="2" />
+                            <Setter Property="extensions:ShadowExtension.ShadowDepth" Value="Depth1" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsFocused" Value="True" />
+                                <Condition Property="IsReadOnly" Value="False" />
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.Setters>
+                                <Setter TargetName="border" Property="BorderBrush" Value="{DynamicResource PrimaryBrush}" />
+                            </MultiTrigger.Setters>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:PhotonTheme.Controls">
+
+    <!--  This dictionary overrides the default themes  -->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Generic.xaml" />
+        <ResourceDictionary Source="Styles/TextBlock.xaml" />
+        <ResourceDictionary Source="Styles/Button.xaml" />
+        <ResourceDictionary Source="Styles/ScrollBar.xaml" />
+        <ResourceDictionary Source="Styles/TabControl.xaml" />
+        <ResourceDictionary Source="Styles/TextBox.xaml" />
+        <ResourceDictionary Source="Styles/VerificationBox.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style BasedOn="{StaticResource MinimalScrollBar}" TargetType="{x:Type ScrollBar}" />
+    <Style BasedOn="{StaticResource PhotonTabControl}" TargetType="{x:Type TabControl}" />
+    <Style BasedOn="{StaticResource RegularMediumTextBlock}" TargetType="{x:Type TextBlock}" />
+    <Style BasedOn="{StaticResource PhotonTextBox}" TargetType="{x:Type TextBox}" />
+    <Style BasedOn="{StaticResource PhotonVerificationBox}" TargetType="{x:Type controls:VerificationBox}"/>
+
+</ResourceDictionary>

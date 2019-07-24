@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PhotonTheme.Shared.Controls.Enums;
+using PhotonTheme.Controls;
 
 namespace PhotonTheme.WpfDemo
 {
@@ -26,7 +26,7 @@ namespace PhotonTheme.WpfDemo
             VerificationBox.VerificationFunction = Verify;
         }
 
-        private VerificationResult Verify(string arg)
+        private static VerificationResult Verify(string arg)
         {
             if (arg.ToLowerInvariant().Equals("success")) return VerificationResult.Success;
             if (arg.ToLowerInvariant().Equals("error")) return VerificationResult.Fail;
