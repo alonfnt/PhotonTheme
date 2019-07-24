@@ -23,13 +23,22 @@ namespace PhotonTheme.WpfDemo
         {
             InitializeComponent();
 
-            VerificationBox.VerificationFunction = Verify;
+            VerificationBox.VerificationFunction = VerifyPrefix;
+            VerificationBoxFocus.VerificationFunction = VerifyText;
         }
 
-        private static VerificationResult Verify(string arg)
+        private static VerificationResult VerifyText(string arg)
         {
             if (arg.ToLowerInvariant().Equals("success")) return VerificationResult.Success;
             if (arg.ToLowerInvariant().Equals("error")) return VerificationResult.Fail;
+
+            return VerificationResult.None;
+        }
+
+        private static VerificationResult VerifyPrefix(string arg)
+        {
+            if (arg.StartsWith("pre")) return VerificationResult.Success;
+            if (arg.StartsWith("post")) return VerificationResult.Fail;
 
             return VerificationResult.None;
         }

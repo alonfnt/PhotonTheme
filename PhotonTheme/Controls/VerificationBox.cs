@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace PhotonTheme.Controls
 {
@@ -10,7 +11,19 @@ namespace PhotonTheme.Controls
         protected override void OnTextChanged(TextChangedEventArgs e)
         {
             base.OnTextChanged(e);
-            if (VerificationFunction != null) Verify();
+            if (VerificationFunction != null && VerificationTrigger == BindingUpdateTrigger.OnPropertyChanged)
+            {
+                Verify();
+            }
+        }
+
+        protected override void OnLostKeyboardFocus(KeyboardFocusChangedEventArgs e)
+        {
+            base.OnLostKeyboardFocus(e);
+            if (VerificationFunction != null && VerificationTrigger == BindingUpdateTrigger.LostFocus)
+            {
+                Verify();
+            }
         }
 
         #region IsError
@@ -36,6 +49,19 @@ namespace PhotonTheme.Controls
 
         public static readonly DependencyProperty IsSuccessProperty =
             DependencyProperty.Register(nameof(IsSuccess), typeof(bool), typeof(VerificationBox), new PropertyMetadata(false));
+
+        #endregion
+
+        #region VerificationTrigger
+
+        public BindingUpdateTrigger VerificationTrigger
+        {
+            get => (BindingUpdateTrigger)GetValue(VerificationTriggerProperty);
+            set => SetValue(VerificationTriggerProperty, value);
+        }
+
+        public static readonly DependencyProperty VerificationTriggerProperty =
+            DependencyProperty.Register(nameof(VerificationTrigger), typeof(BindingUpdateTrigger), typeof(VerificationBox), new PropertyMetadata(BindingUpdateTrigger.OnPropertyChanged));
 
         #endregion
 
@@ -65,5 +91,6 @@ namespace PhotonTheme.Controls
         }
 
         #endregion
+
     }
 }
