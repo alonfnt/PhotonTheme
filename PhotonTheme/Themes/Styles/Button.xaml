@@ -13,7 +13,7 @@
         x:Key="PrimaryButton"
         BasedOn="{StaticResource BaseButton}"
         TargetType="{x:Type ButtonBase}">
-        <Setter Property="Foreground" Value="{StaticResource LightBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource DarkForegroundBrush}" />
         <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}" />
     </Style>

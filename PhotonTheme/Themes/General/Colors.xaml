@@ -12,6 +12,9 @@
     <Color x:Key="MediumColor">#ECECEE</Color>
     <Color x:Key="LightColor">#F9F9FB</Color>
 
+    <Color x:Key="LightForegroundColor">#353C42</Color>
+    <Color x:Key="DarkForegroundColor">#F9F9FB</Color>
+
     <!--  BRUSHES  -->
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource PrimaryColor}" />
     <SolidColorBrush x:Key="GreenBrush" Color="{StaticResource GreenColor}" />
@@ -21,4 +24,8 @@
     <SolidColorBrush x:Key="DarkBrush" Color="{StaticResource DarkColor}" />
     <SolidColorBrush x:Key="MediumBrush" Color="{StaticResource MediumColor}" />
     <SolidColorBrush x:Key="LightBrush" Color="{StaticResource LightColor}" />
+
+    <SolidColorBrush x:Key="LightForegroundBrush" Color="{StaticResource LightForegroundColor}"/>
+    <SolidColorBrush x:Key="DarkForegroundBrush" Color="{StaticResource DarkForegroundColor}"/>
+
 </ResourceDictionary>
