@@ -20,7 +20,7 @@ This library currently works with **.Net Core 3.0**.
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/PhotonDesign.Wpf;component/Themes/PhotonDesign.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/PhotonTheme;component/Themes/Defaults.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
