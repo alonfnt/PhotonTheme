@@ -52,9 +52,21 @@
                     Margin="8"
                     Style="{StaticResource Heading4TextBlock}"
                     Text="VerificationBox" />
+                <TextBlock
+                    Margin="8"
+                    Style="{StaticResource BoldLargeTextBlock}"
+                    Text="OnTextChanged verification" />
                 <controls:VerificationBox
                     x:Name="VerificationBox"
                     Margin="8"
+                    controls:FieldExtension.Placeholder="prefix 'pre' and 'post'..." />
+                <TextBlock
+                    Margin="8"
+                    Style="{StaticResource BoldLargeTextBlock}"
+                    Text="OnLostFocus verification" />
+                <controls:VerificationBox
+                    x:Name="VerificationBoxFocus"
+                    Margin="8" Style="{StaticResource LostFocusVerificationBox}"
                     controls:FieldExtension.Placeholder="Type 'success' or 'error'..." />
             </StackPanel>
         </Border>

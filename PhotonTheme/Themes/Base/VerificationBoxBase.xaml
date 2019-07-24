@@ -13,6 +13,7 @@
         BasedOn="{StaticResource BaseTextBox}"
         TargetType="controls:VerificationBox">
         <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="VerificationTrigger" Value="OnPropertyChanged"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="controls:VerificationBox">

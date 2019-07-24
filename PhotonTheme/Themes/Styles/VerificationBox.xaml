@@ -6,9 +6,18 @@
         <ResourceDictionary Source="../Base/VerificationBoxBase.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <!-- region Default -->
+    <!-- region PhotonVerificationBox -->
 
     <Style x:Key="PhotonVerificationBox" BasedOn="{StaticResource BaseVerificationBox}" TargetType="{x:Type controls:VerificationBox}"/>
 
     <!-- endregion-->
+
+    <!-- region LostFocusVerificationBox -->
+
+    <Style x:Key="LostFocusVerificationBox" BasedOn="{StaticResource BaseVerificationBox}" TargetType="{x:Type controls:VerificationBox}">
+        <Setter Property="VerificationTrigger" Value="LostFocus"/>
+    </Style>
+
+    <!-- endregion -->
+
 </ResourceDictionary>
