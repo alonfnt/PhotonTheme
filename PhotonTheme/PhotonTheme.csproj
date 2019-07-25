@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <None Remove="Themes\Base\ButtonBase.xaml" />
+    <None Remove="Themes\Base\CheckBoxBase.xaml" />
     <None Remove="Themes\Base\ScrollBarBase.xaml" />
     <None Remove="Themes\Base\TabControlBase.xaml" />
     <None Remove="Themes\Base\TextBlockBase.xaml" />
@@ -38,6 +39,7 @@
     <None Remove="Themes\PhotonTheme.Font.xaml" />
     <None Remove="Themes\PhotonTheme.Shadows.xaml" />
     <None Remove="Themes\ScrollBar.xaml" />
+    <None Remove="Themes\Styles\CheckBox.xaml" />
     <None Remove="Themes\Styles\VerificationBox.xaml" />
     <None Remove="Themes\TabControl.xaml" />
     <None Remove="Themes\TextBlock.xaml" />

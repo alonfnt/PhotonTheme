@@ -6,7 +6,7 @@
         <ResourceDictionary Source="../Generic.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="BaseTextBox" TargetType="{x:Type TextBox}">
+    <Style x:Key="BaseTextBox" TargetType="{x:Type TextBox}" BasedOn="{StaticResource Base}">
         <Setter Property="Background" Value="White" />
         <Setter Property="BorderBrush" Value="{DynamicResource MediumBrush}" />
         <Setter Property="Foreground" Value="{DynamicResource BlackBrush}" />
