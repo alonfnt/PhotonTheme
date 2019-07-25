@@ -7,6 +7,8 @@ Some base controls and mostly the icon pack is from [Material Design Library](ht
 
 This library currently works with **.Net Core 3.0**. 
 
+![Nuget](https://img.shields.io/nuget/v/PhotonTheme?color=blue&label=nuget)
+
 ## Getting Started
 
 
