@@ -11,6 +11,7 @@
         <ResourceDictionary Source="Styles/TabControl.xaml" />
         <ResourceDictionary Source="Styles/TextBox.xaml" />
         <ResourceDictionary Source="Styles/VerificationBox.xaml" />
+        <ResourceDictionary Source="Styles/CheckBox.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <Style BasedOn="{StaticResource MinimalScrollBar}" TargetType="{x:Type ScrollBar}" />
@@ -18,5 +19,6 @@
     <Style BasedOn="{StaticResource RegularMediumTextBlock}" TargetType="{x:Type TextBlock}" />
     <Style BasedOn="{StaticResource PhotonTextBox}" TargetType="{x:Type TextBox}" />
     <Style BasedOn="{StaticResource PhotonVerificationBox}" TargetType="{x:Type controls:VerificationBox}"/>
+    <Style BasedOn="{StaticResource PhotonCheckBox}" TargetType="{x:Type CheckBox}"/>
 
 </ResourceDictionary>
