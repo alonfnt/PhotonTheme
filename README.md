@@ -7,8 +7,8 @@ Some base controls and mostly the icon pack is from [Material Design Library](ht
 
 This library currently works with **.Net Core 3.0**. 
 
-![Nuget](https://img.shields.io/nuget/v/PhotonTheme?color=blue&label=nuget)
-
+[![Nuget](https://img.shields.io/nuget/v/PhotonTheme?color=blue&label=nuget)](https://www.nuget.org/packages/PhotonTheme/)
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 ## Getting Started
 
 
@@ -16,7 +16,7 @@ This library currently works with **.Net Core 3.0**.
  
  `Install-Package PhotonTheme`
 
-+ In the App.xaml file, add the followinf ResourceDictionary:
++ In the App.xaml file, add the following ResourceDictionary:
 ```
 <Application . . . >
     <Application.Resources>
