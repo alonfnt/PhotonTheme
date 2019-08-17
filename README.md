@@ -9,14 +9,59 @@ This library currently works with **.Net Core 3.0**.
 
 [![Nuget](https://img.shields.io/nuget/v/PhotonTheme?color=blue&label=nuget)](https://www.nuget.org/packages/PhotonTheme/)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+
+## Styles and Controls
+
+<table>
+<tr>
+<td><a href="../../wiki/Alert">Alert</a></td>
+<td><a href="../../wiki/Avatar">Avatar</a></td>
+<td><a href="../../wiki/Badge">Badge</a></td>
+<td><a href="../../wiki/Button">Button</a></td>
+</tr>
+<tr>
+<td><a href="../../wiki/CheckBox">CheckBox</a></td>
+<td><a href="../../wiki/Colors">Colors</a></td>
+<td><a href="../../wiki/ComboBox">ComboBox</a></td>
+ <td><a href="../../wiki/DataGrid">DataGrid</a></td>
+</tr>
+<tr>
+<td><a href="../../wiki/DateTimePicker">DateTimePicker</a></td>
+<td><a href="../../wiki/Dialog">Dialog</a></td>
+<td><a href="../../wiki/Header">Header</a></td>
+<td><a href="../../wiki/Icons">Icons</a></td>
+</tr>
+<tr>
+<td><a href="../../wiki/Navigation">Navigation</a></td>
+<td><a href="../../wiki/Notifications">Notifications</a></td>
+<td><a href="../../wiki/PasswordBox">PasswordBox</a></td>
+<td><a href="../../wiki/PopupBox">PopupBox</a></td>
+</tr>
+<tr>
+<td><a href="../../wiki/ProgressBar">ProgressBar</a></td>
+<td><a href="../../wiki/RadioButton">RadioButton</a></td>
+<td><a href="../../wiki/Slider">Slider</a></td>
+<td><a href="../../wiki/TabControl">TabControl</a></td>
+</tr>
+<tr>
+<td><a href="../../wiki/TextBlock">TextBlock</a></td>
+<td><a href="../../wiki/TextBox">TextBox</a></td>
+<td><a href="../../wiki/ToggleButton">ToggleButton</a></td>
+<td><a href="../../wiki/Tooltip">Tooltip</a></td>
+</tr>
+ <tr>
+<td><a href="../../wiki/VerificationBox">VerificationBox</a></td>
+ </tr> 
+</table>
+
 ## Getting Started
 
 
-+ Install the Nuget Package 
+1. Install the Nuget Package 
  
  `Install-Package PhotonTheme`
 
-+ In the App.xaml file, add the following ResourceDictionary:
+2. In the App.xaml file, add the following ResourceDictionary:
 ```
 <Application . . . >
     <Application.Resources>
@@ -28,41 +73,8 @@ This library currently works with **.Net Core 3.0**.
     </Application.Resources>
 </Application>
 ```
-+ You can start using all the styles and controls of the Toolkit now. 
+3. You can start using all the styles and controls of the Toolkit now. 
 
-## Demo (*Pending*)
-Every realease comes with a precompile demo to test all the styles. You can dowload it here: (*missing*)
-
-(*Add Screenshots of the Demo*)
-
-## Styles discussions
-
-| Control| Discussion Issue | Status | Wiki
-| --- | --- | --- | ---
-| Colors | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/1) | In Progress | 
-| Typography | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/2) | In Progress |
-| Icons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/3) | In Progress |
-| Alerts | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/4) | Pending |
-| Avatars | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/5) | Pending |
-| Buttons | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/6) | In Progress |
-| Badges | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/7) | Pending |
-| Combobox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending |
-| PopupBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/8) | Pending |
-| TextBox |[Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | In Progress |
-| PasswordBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
-| CheckBox | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
-| RadioButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
-| ToggleButton | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/9) | Pending |
-| Headers | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/10) | Pending |
-| ProgressBar | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/11) | Pending |
-| Slider | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/12) | Pending |
-| Table | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/13) | Pending |
-| TabControl | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/14) | In Progress |
-| Tooltip | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/15) | Pending |
-| DateTimePicker | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/16) | Pending |
-| Dialog | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/17) | Pending |
-| Notifications | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/18) | Pending |
-| Navigation | [Open Issue](https://github.com/AlbertAlonso/PhotonDesignTheme/issues/19) | Pending |
 
 ## License
 
