@@ -5,12 +5,12 @@
 
     <FontFamily x:Key="PhotonThemeFont">../../Utilities/Resources/Lato/#Lato</FontFamily>
 
-    <system:Int32 x:Key="Heading1Size">44</system:Int32>
-    <system:Int32 x:Key="Heading2Size">36</system:Int32>
-    <system:Int32 x:Key="Heading3Size">30</system:Int32>
-    <system:Int32 x:Key="Heading4Size">22</system:Int32>
-    <system:Int32 x:Key="ParagraphTitleSize">26</system:Int32>
-    <system:Int32 x:Key="LargeFontSize">22</system:Int32>
-    <system:Int32 x:Key="NormalFontSize">15</system:Int32>
-    <system:Int32 x:Key="SmallFontSize">12</system:Int32>
+    <system:Double x:Key="Heading1Size">44</system:Double>
+    <system:Double x:Key="Heading2Size">36</system:Double>
+    <system:Double x:Key="Heading3Size">30</system:Double>
+    <system:Double x:Key="Heading4Size">22</system:Double>
+    <system:Double x:Key="ParagraphTitleSize">26</system:Double>
+    <system:Double x:Key="LargeFontSize">22</system:Double>
+    <system:Double x:Key="NormalFontSize">15</system:Double>
+    <system:Double x:Key="SmallFontSize">12</system:Double>
 </ResourceDictionary>

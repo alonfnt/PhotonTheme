@@ -1,120 +1,119 @@
-﻿<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="../General/Fonts.xaml" />
         <ResourceDictionary Source="../Base/TextBlockBase.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <!-- region Heading1TextBlock -->
+    <!--  region Heading1TextBlock  -->
     <Style
         x:Key="Heading1TextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="40" />
+        <Setter Property="FontSize" Value="{StaticResource Heading1Size}" />
         <Setter Property="FontWeight" Value="Black" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
-    <!-- region Heading2TextBlock -->
+    <!--  region Heading2TextBlock  -->
     <Style
         x:Key="Heading2TextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="32" />
+        <Setter Property="FontSize" Value="{StaticResource Heading2Size}" />
         <Setter Property="FontWeight" Value="Black" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
     <!--  region Heading3TextBlock  -->
     <Style
         x:Key="Heading3TextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="27" />
+        <Setter Property="FontSize" Value="{StaticResource Heading3Size}" />
         <Setter Property="FontWeight" Value="Black" />
     </Style>
-    <!-- endregion-->
+    <!--  endregion  -->
 
-    <!-- region Heading4TextBlock  -->
+    <!--  region Heading4TextBlock  -->
     <Style
         x:Key="Heading4TextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="19" />
+        <Setter Property="FontSize" Value="{StaticResource Heading4Size}" />
         <Setter Property="FontWeight" Value="Black" />
     </Style>
-    <!-- endregion-->
+    <!--  endregion  -->
 
-    <!-- region BoldLargeTextBlock -->
+    <!--  region BoldLargeTextBlock  -->
     <Style
         x:Key="BoldLargeTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
         <Setter Property="FontWeight" Value="Bold" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
-    <!-- region BoldMediumTextBlock -->
+    <!--  region BoldMediumTextBlock  -->
     <Style
         x:Key="BoldMediumTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
         <Setter Property="FontWeight" Value="Bold" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
-    <!-- region BoldSmallTextBlock -->
+    <!--  region BoldSmallTextBlock  -->
     <Style
         x:Key="BoldSmallTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="11" />
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}" />
         <Setter Property="FontWeight" Value="Bold" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
     <!--  region ParagraphTextBlock  -->
     <Style
         x:Key="ParagraphTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="Padding" Value="0 5"/>
-        <Setter Property="FontSize" Value="20" />
+        <Setter Property="Padding" Value="0,5" />
+        <Setter Property="FontSize" Value="{StaticResource ParagraphTitleSize}" />
         <Setter Property="FontWeight" Value="Regular" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
-    <!-- region RegularLargeTextBlock-->
+    <!--  region RegularLargeTextBlock  -->
     <Style
         x:Key="RegularLargeTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontSize" Value="{StaticResource LargeFontSize}" />
         <Setter Property="FontWeight" Value="Regular" />
     </Style>
-    <!-- endregion-->
+    <!--  endregion  -->
 
-    <!-- region RegularMediumTextBlock  -->
+    <!--  region RegularMediumTextBlock  -->
     <Style
         x:Key="RegularMediumTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="{StaticResource NormalFontSize}" />
         <Setter Property="FontWeight" Value="Regular" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
-    <!-- region RegularSmallTextBlock-->
+    <!--  region RegularSmallTextBlock  -->
     <Style
         x:Key="RegularSmallTextBlock"
         BasedOn="{StaticResource BaseTextBlock}"
         TargetType="{x:Type TextBlock}">
-        <Setter Property="FontSize" Value="11" />
+        <Setter Property="FontSize" Value="{StaticResource SmallFontSize}" />
         <Setter Property="FontWeight" Value="Regular" />
     </Style>
-    <!-- endregion -->
+    <!--  endregion  -->
 
 </ResourceDictionary>
